@@ -1,0 +1,18 @@
+version: '2'
+services: 
+# nefolog_database:
+#  build: ./Postgres
+#  ports:
+#   - '5432:5432'
+#  environment:
+#   POSTGRES_PASSWORD: 123456789
+#   POSTGRES_USER: postgres
+ nefolog_webapp:
+  build: ./Nefolog
+  ports:
+   - '8080:8080'
+  network_mode: "host"
+#  depends_on:
+#   - nefolog_database
+#  external_links:
+#   - nefolog_database
