@@ -21,5 +21,5 @@ sudo service postgresql start
 
 sudo docker-compose up -d
 
-echo "Done Provisioning Nefolog Module. Accessible in $HOST:8090"
+echo "Done Provisioning Nefolog Module. Accessible in $HOST:8080"
 
